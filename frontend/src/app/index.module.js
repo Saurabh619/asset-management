@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('sparsh', ['ngCookies', 'ui.router', 'ngMaterial', 'toastr']);
+    .module('sparsh', ['ngCookies', 'ui.router', 'ngMaterial']);
 
 })();

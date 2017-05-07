@@ -1,34 +1,95 @@
-<div layout="vertical" layout-fill>
+<md-content>
+  <div class="techs" layout-align="center">
+    <md-card>
+      <md-card-content>
+        <div layout="column" ng-cloak class="md-inline-form">
 
-  <md-content>
-    <header>
-      <acme-navbar creation-date="main.creationDate"></acme-navbar>
-    </header>
+          <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding>
+            <div>
+              <md-input-container>
+                <label>Title</label>
+                <input ng-model="user.title">
+              </md-input-container>
 
-    <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </p>
-    </section>
+              <md-input-container>
+                <label>Email</label>
+                <input ng-model="user.email" type="email">
+              </md-input-container>
+            </div>
 
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <md-card-content>
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <h3 class="md-title">{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-        </md-card-content>
-        <div class="md-action-buttons">
-          <md-button ng-href="{{ awesomeThing.url }}">Website</md-button>
+            <div>
+              <form name="userForm">
+
+                <div layout-gt-xs="row">
+                  <md-input-container class="md-block" flex-gt-xs>
+                    <label>Company (Disabled)</label>
+                    <input ng-model="user.company" disabled>
+                  </md-input-container>
+
+                </div>
+
+                <div layout-gt-sm="row">
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>First name</label>
+                    <input ng-model="user.firstName">
+                  </md-input-container>
+
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>Long Last Name That Will Be Truncated And 3 Dots (Ellipsis) Will Appear At The End</label>
+                    <input ng-model="theMax">
+                  </md-input-container>
+                </div>
+
+                <md-input-container class="md-block">
+                  <label>Address</label>
+                  <input ng-model="user.address">
+                </md-input-container>
+
+                <md-input-container md-no-float class="md-block">
+                  <input ng-model="user.address2" placeholder="Address 2">
+                </md-input-container>
+
+                <div layout-gt-sm="row">
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>City</label>
+                    <input ng-model="user.city">
+                  </md-input-container>
+
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>State</label>
+                    <md-select ng-model="user.state">
+                      <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+                        {{state.abbrev}}
+                      </md-option>
+                    </md-select>
+                  </md-input-container>
+
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>Postal Code</label>
+                    <input name="postalCode" ng-model="user.postalCode" placeholder="12345" required ng-pattern="/^[0-9]{5}$/" md-maxlength="5">
+
+                    <div ng-messages="userForm.postalCode.$error" role="alert" multiple>
+                      <div ng-message="required" class="my-message">You must supply a postal code.</div>
+                      <div ng-message="pattern" class="my-message">That doesn't look like a valid postal code.
+                      </div>
+                      <div ng-message="md-maxlength" class="my-message">
+                        Don't use the long version silly...we don't need to be that specific...
+                      </div>
+                    </div>
+                  </md-input-container>
+                </div>
+
+                <md-input-container class="md-block">
+                  <label>Biography</label>
+                  <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+                </md-input-container>
+
+              </form>
+            </div>
+          </md-content>
+
         </div>
-      </md-card>
-    </div>
-  </md-content>
-
-</div>
+      </md-card-content>
+    </md-card>
+  </div>
+</md-content>

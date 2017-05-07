@@ -1,0 +1,97 @@
+/**
+ *  Do not remove the comment below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.woff) format("woff"), url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+html {
+  font-family: 'Roboto Slab', serif;
+}
+
+[layout=row] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+md-toolbar.md-default-theme {
+  background-color: black;
+}
+
+section.jumbotron {
+  margin-bottom: 30px;
+  padding: 1px 30px;
+  background-color: #5aadbb;
+  text-align: center;
+  color: white;
+}
+
+section.jumbotron h1 {
+  font-size: 3em;
+}
+
+.techs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.techs md-card {
+  width: 30%;
+}
+
+.techs md-card img.pull-right {
+  float: right;
+  width: 100px;
+}
+
+/**
+ *  Do not remove the comment below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3N0ZGluIiwiaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7R0FHRztBQUlILDJHQUFZO0FBRVo7RUFDRSw4QkFBOEI7RUFDOUIsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQiw2RkFBNEY7RUFBRSxlQUFlO0VBQzdHLDZYQUltRztDQ05wRzs7QURTRDtFQUNFLDhCQUE4QjtFQUM5QixvQkFBb0I7RUFDcEIsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUFHLHlCQUF5QjtFQUM1QyxzQkFBc0I7RUFDdEIsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YscUJBQXFCO0VBQ3JCLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFFbEIsc0NBQXNDO0VBQ3RDLG9DQUFvQztFQUNwQyxvQ0FBb0M7RUFDcEMsbUNBQW1DO0VBRW5DLDBCQUEwQjtFQUMxQixtQ0FBbUM7RUFFbkMscUJBQXFCO0VBQ3JCLHNDQUE4QjtVQUE5Qiw4QkFBOEI7Q0FDL0I7O0FBRUQ7RUFDRSxrQ0FBa0M7Q0FDbkM7O0FDUEQ7RURVRSwrQkFBb0I7RUFBcEIsOEJBQW9CO01BQXBCLHdCQUFvQjtVQUFwQixvQkFBb0I7Q0FDckI7O0FBRUQ7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixpQkFBaUI7Q0FDbEI7O0FBRUQ7RUFDRSx3QkFBd0I7Q0FDekI7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLDBCQUEwQjtFQUMxQixtQkFBbUI7RUFFbkIsYUFBYTtDQUtkOztBQUhDO0VBQ0UsZUFBZTtDQUNoQjs7QUFHSDtFQUNFLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2QsK0JBQW9CO0VBQXBCLDhCQUFvQjtNQUFwQix3QkFBb0I7VUFBcEIsb0JBQW9CO0NBVXJCOztBQVJDO0VBQ0UsV0FBVztDQU1aOztBQVhIO0VBUU0sYUFBYTtFQUNiLGFBQWE7Q0FDZDs7QUFJTDs7O0dBR0ciLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlc0NvbnRlbnQiOltudWxsLCIvKipcbiAqICBEbyBub3QgcmVtb3ZlIHRoZSBjb21tZW50IGJlbG93LiBJdCdzIHRoZSBtYXJrZXJzIHVzZWQgYnkgd2lyZWRlcCB0byBpbmplY3RcbiAqICBzYXNzIGRlcGVuZGVuY2llcyB3aGVuIGRlZmluZWQgaW4gdGhlIGJvd2VyLmpzb24gb2YgeW91ciBkZXBlbmRlbmNpZXNcbiAqL1xuQGltcG9ydCB1cmwoaHR0cDovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvK1NsYWI6NDAwLDcwMHxSb2JvdG86NDAwLDcwMCw3MDBpdGFsaWMsNDAwaXRhbGljKTtcbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ01hdGVyaWFsIEljb25zJztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNDAwO1xuICBzcmM6IHVybCguLi8uLi9ib3dlcl9jb21wb25lbnRzL21hdGVyaWFsLWRlc2lnbi1pY29uZm9udC9pY29uZm9udC9NYXRlcmlhbEljb25zLVJlZ3VsYXIuZW90KTtcbiAgLyogRm9yIElFNi04ICovXG4gIHNyYzogbG9jYWwoXCJNYXRlcmlhbCBJY29uc1wiKSwgbG9jYWwoXCJNYXRlcmlhbEljb25zLVJlZ3VsYXJcIiksIHVybCguLi8uLi9ib3dlcl9jb21wb25lbnRzL21hdGVyaWFsLWRlc2lnbi1pY29uZm9udC9pY29uZm9udC9NYXRlcmlhbEljb25zLVJlZ3VsYXIud29mZjIpIGZvcm1hdChcIndvZmYyXCIpLCB1cmwoLi4vLi4vYm93ZXJfY29tcG9uZW50cy9tYXRlcmlhbC1kZXNpZ24taWNvbmZvbnQvaWNvbmZvbnQvTWF0ZXJpYWxJY29ucy1SZWd1bGFyLndvZmYpIGZvcm1hdChcIndvZmZcIiksIHVybCguLi8uLi9ib3dlcl9jb21wb25lbnRzL21hdGVyaWFsLWRlc2lnbi1pY29uZm9udC9pY29uZm9udC9NYXRlcmlhbEljb25zLVJlZ3VsYXIudHRmKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbn1cblxuLm1hdGVyaWFsLWljb25zIHtcbiAgZm9udC1mYW1pbHk6ICdNYXRlcmlhbCBJY29ucyc7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC1zaXplOiAyNHB4O1xuICAvKiBQcmVmZXJyZWQgaWNvbiBzaXplICovXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgd2lkdGg6IDFlbTtcbiAgaGVpZ2h0OiAxZW07XG4gIGxpbmUtaGVpZ2h0OiAxO1xuICB0ZXh0LXRyYW5zZm9ybTogbm9uZTtcbiAgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDtcbiAgd29yZC13cmFwOiBub3JtYWw7XG4gIC8qIFN1cHBvcnQgZm9yIGFsbCBXZWJLaXQgYnJvd3NlcnMuICovXG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAvKiBTdXBwb3J0IGZvciBTYWZhcmkgYW5kIENocm9tZS4gKi9cbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTtcbiAgLyogU3VwcG9ydCBmb3IgRmlyZWZveC4gKi9cbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgLyogU3VwcG9ydCBmb3IgSUUuICovXG4gIGZvbnQtZmVhdHVyZS1zZXR0aW5nczogJ2xpZ2EnO1xufVxuXG5odG1sIHtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xufVxuXG5bbGF5b3V0PXJvd10ge1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xufVxuXG4uYnJvd3NlaGFwcHkge1xuICBtYXJnaW46IDAuMmVtIDA7XG4gIGJhY2tncm91bmQ6ICNjY2M7XG4gIGNvbG9yOiAjMDAwO1xuICBwYWRkaW5nOiAwLjJlbSAwO1xufVxuXG5tZC10b29sYmFyLm1kLWRlZmF1bHQtdGhlbWUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuc2VjdGlvbi5qdW1ib3Ryb24ge1xuICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICBwYWRkaW5nOiAxcHggMzBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzVhYWRiYjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbnNlY3Rpb24uanVtYm90cm9uIGgxIHtcbiAgZm9udC1zaXplOiAzZW07XG59XG5cbi50ZWNocyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZmxvdzogcm93IHdyYXA7XG59XG5cbi50ZWNocyBtZC1jYXJkIHtcbiAgd2lkdGg6IDMwJTtcbn1cblxuLnRlY2hzIG1kLWNhcmQgaW1nLnB1bGwtcmlnaHQge1xuICBmbG9hdDogcmlnaHQ7XG4gIHdpZHRoOiAxMDBweDtcbn1cblxuLyoqXG4gKiAgRG8gbm90IHJlbW92ZSB0aGUgY29tbWVudCBiZWxvdy4gSXQncyB0aGUgbWFya2VycyB1c2VkIGJ5IGd1bHAtaW5qZWN0IHRvIGluamVjdFxuICogIGFsbCB5b3VyIHNhc3MgZmlsZXMgYXV0b21hdGljYWxseVxuICovXG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
